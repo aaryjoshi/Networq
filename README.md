@@ -18,7 +18,7 @@ Built with **React**, **Redux**, **Firebase Authentication**, and **Firestore**,
 
 1. **Clone the repository**
     ```bash
-    git clone [https://github.com/your-username/networq.git](https://github.com/aaryjoshi/Networq.git)
+    git clone (https://github.com/aaryjoshi/Networq.git)
     cd networq
     ```
 
