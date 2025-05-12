@@ -56,14 +56,13 @@ function Login() {
 
     return (
         <div className='login'>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" />
+            <img src="Networq_Login_icon.png" />
 
             <form>
                 <input value={name} onChange={e => setName(e.target.value)} type='text' placeholder='Full Name(required if registering)'></input>
                 <input value={profilepic} onChange={e => setProfilepic(e.target.value)} type='text' placeholder='profile pic URL (optional)'></input>
                 <input value={email} onChange={e => setEmail(e.target.value)} type='Email' placeholder='Email'></input>
                 <input value={password} onChange={e => setPassword(e.target.value)} type='password' placeholder='password'></input>
-
                 <button onClick={logintoApp}>Sign In</button>
             </form>
 

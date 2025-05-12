@@ -6,7 +6,7 @@ function Widget() {
   return (
     <div className='widgets'>
         <div className='widgets__header'> 
-        <h2>LinkedIn News</h2>
+        <h2>Networq News</h2>
         <InfoIcon/>
         </div>
     </div>

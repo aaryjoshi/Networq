@@ -16,7 +16,6 @@ function Sidebar() {
 
     );
 
-
     return (
         <div className='sidebar'>
             <div className="sidebar__top">
@@ -28,12 +27,12 @@ function Sidebar() {
 
             <div className="sidebar__stats">
                 <div className="sidebar__stat">
-                    <p>Who viewed you</p>
+                    <p>followers</p>
                     <p className="sidebar__statnumber">3456</p>
                 </div>
                 <div className="sidebar__stat">
-                    <p>Views on post</p>
-                    <p className="sidebar__statnumber">2644</p>
+                    <p>connections</p>
+                    <p className="sidebar__statnumber">500+</p>
                 </div>
             </div>
 

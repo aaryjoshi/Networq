@@ -3,10 +3,9 @@ import "./Header.css";
 import SearchIcon from '@material-ui/icons/Search';
 import HeaderOption from './HeaderOption'
 import HomeIcon from '@material-ui/icons/Home'
-import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
-import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
-import ChatIcon from '@material-ui/icons/Chat';
-import NotificationsIcon from '@material-ui/icons/Notifications';
+import ForumOutlinedIcon from '@material-ui/icons/ForumOutlined';
+import NotificationsActiveOutlinedIcon from '@material-ui/icons/NotificationsActiveOutlined';
+import GroupWorkIcon from '@material-ui/icons/GroupWork';
 import { useDispatch, useSelector } from "react-redux";
 import { auth } from "./firebase";
 import { logout, selectUser } from "./features/userSlice";
@@ -26,7 +25,7 @@ function Header() {
             <h1></h1>
 
             <div className="header__left">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></img>
+                <img src="/Networq_icon.png" alt="Nerworq Logo" />
                 
                 <div className="header__search">
                     <SearchIcon />
@@ -35,12 +34,12 @@ function Header() {
             </div>
 
             <div className="header__right">
-                <HeaderOption Icon={HomeIcon} title="Home"/>
-                <HeaderOption Icon={SupervisorAccountIcon} title="My Network"/>
-                <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
-                <HeaderOption Icon={ChatIcon} title="Messaging"/>
-                <HeaderOption Icon={NotificationsIcon} title="Notifications"/>
-                <HeaderOption avatar title="me" onClick={logoutOfApp}/>
+            <HeaderOption Icon={HomeIcon} title="Home" />
+            <HeaderOption Icon={GroupWorkIcon} title="My Network" />
+            {/* <HeaderOption Icon={WorkspacesIcon} title="Jobs" /> */}
+            <HeaderOption Icon={ForumOutlinedIcon} title="Messaging" />
+            <HeaderOption Icon={NotificationsActiveOutlinedIcon} title="Notifications" />
+            <HeaderOption avatar title="Me" onClick={logoutOfApp} />
             </div>
         </div>
     );
